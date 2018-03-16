@@ -1,0 +1,299 @@
+<html>
+<head>
+	<title>Home</title>
+</head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="styleTubes.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<link href="style.css" rel="stylesheet">
+	<style type="text/css">
+	body{
+		background-image: url(img/rs.jpg);
+		background-size: 100%;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+	}
+		.profile{
+			border-radius: 100%;	
+			width: 180px;
+			height: 180px;
+			height: 50px; width: auto; border-radius: 70%
+		}
+		.description{
+			padding-top: 4%;
+			margin-left: 40%;
+			margin-right: auto;
+		}
+		.buttonE{
+			width: 150%;
+			padding-top: 15%;
+			margin-left: 20%;
+			margin-right: 20%;
+		}
+		.buttonEdit{
+			height: 5%;
+			color: #acabab;
+			border-radius: 5px;
+		}
+		.kprofile{
+			padding-top: 5%;
+			
+		}
+		.test{
+			padding-top: 2%;
+			padding-left: 3%;
+		}
+	</style>
+	
+<body>
+	<div class="this_top_header ">
+		<div class="d-flex align-items-center" style="height: 50;">
+			<div class="topPostLeft7" style="margin-left: 10%;">
+				<p class="Ohayou" style="padding-top:  10;"><a href="home.html">Ohayou</a></p>
+			</div>
+			<div>
+				<a href="profile.html"> <img src="img\profile\4127.jpg" alt="Submit button" class=" profile" style="height: 40;width: 40;"></a>
+				<a href="index.html"><input type="button" name="logout" value="Logout" class="btn btn-primary"></a>
+			</div>
+		</div>
+		
+	</div>
+	<div class="container" >
+		<div class="set" style="background-color: #efeded; border-radius: 15px">
+			<form style="margin-left: 15px">
+				<table>
+					<tr>						
+						<th colspan="2"><h1>Make a Photo Post</h1></th>
+					</tr>
+					<tr>
+						<td><input  type="file" name="photo"  id="photo" placeholder="Choose A Foto"></td>
+					</tr>
+					
+					
+					<tr>
+						<td align="center">
+							<input  name="fulang" type="reset" id="fulang"  value="Reset" class="btn btn-primary">
+							<input type="button" name="submit" class="btn btn-primary post" value="submit">
+						</td>
+					</tr>
+				</table>
+				
+				
+			</form >
+			<div class="templateTub ">
+				
+				
+					<!-- ini postingan -->
+					<form class="addpost">
+					</form>
+					<form class="add1post">
+						
+					</form>
+					<div class="setPost" style="padding-top: 20px">
+							<div>
+								<!-- ini nama -->
+								<div class="d-flex">
+									<div class="topPostLeft11">
+										<div class="d-flex align-items-center" style="padding-bottom: 10px; padding-left: 0px">
+											<div>
+												<img src="img\profile\4127.jpg" class="profile" style="" >
+											</div>
+											<div style="padding-left: 3px"> 
+												<a href=#> <h4> Thermite </h4> </a>
+
+											</div>
+											<input type="button" name="setT" class="btn btn-primary"  value="Delete" >
+										</div>
+									</div>
+									<div class="">
+										<div>
+											
+										</div>
+									</div>
+								</div>
+							<form>
+								<!-- ini photo -->
+								<div class="isiGmbr" align="center" style="width: auto;height: auto;">
+									<img src="img\profileG\1.jpg" class="gmbrIn" style="width: 100%;height: auto;" ondblclick="lampuOn(lampu1)">
+								</div>
+								<!-- ini lope -->
+								<div>
+									<div class="d-flex align-items-center">
+										<div class="icon">
+											<input type="image" id="lampu1" src="img\L\loce1.png" alt="Submit button" onclick="lampuOn(this)" class="lampu" value="awal">
+										</div>
+										
+									</div>
+								</div>
+								<!-- ini komentar -->
+								<div class="d-flex">
+									<div style="padding-right: 3px; padding-left: 5px"> <a href="#"> <h4>Thermite</h4> </a> </div>
+									<div> <h4 class="komen"> komen </h4> </div>
+									
+								</div>
+								<table class="givecommend table">
+										<tr>
+											<td></td>
+										</tr>
+									</table>
+								<form style="display: none;" id="c1">
+										<input type="text" name="inputcommend" id="commend" class="form-control"><br>
+										<input type="button" name="submitcomen" value="submit" class="btn btn-primary save">
+								</form>
+							
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		
+					
+				
+</body>
+
+<script src="src/jquery-1.12.4.min.js"></script>
+
+<script>
+	// $(document).ready(function(){
+	// 		$('.post').click(function(){
+	// 			var photo = $('#photo').val();
+				
+					
+	// 			html='<div class="setPost" style="padding-top: 20px">'+
+	// 						'<div>'+
+	// 							'<div class="d-flex">'+
+	// 								'<div class="topPostLeft11">'+
+	// 									'<div class="d-flex align-items-center" style="padding-bottom: 10px; padding-left: 0px">'+
+	// 										'<div>'+
+	// 											'<img src="4127.jpg" class="profile" style="" >'+
+	// 										'</div>'+
+	// 										'<div style="padding-left: 3px">'+
+	// 											'<a href=#>'+' <h4>'+' Thermite'+' </h4>'+' </a>'+
+	// 										'</div>'+
+	// 									'</div>'+
+	// 								'</div>'+
+	// 								'<div class="">'+
+	// 									'<div class="d-flex align-items-center">'+
+	// 										'<input type="button" name="setT"  class="btn btn-primary" value="Delete" >'+
+	// 									'</div>'+
+	// 								'</div>'+
+	// 							'</div>'+
+	// 						'<form>'+
+								
+	// 							'<div class="isiGmbr" align="center" style="width: auto;height: auto;">'+
+	// 								'<img src="3.jpg" class="gmbrIn" style="width: 100%;height: auto;" ondblclick="lampuOn(lampu1)">'+
+	// 							'</div>'+
+								
+	// 							'<div>'+
+	// 								'<div class="d-flex align-items-center">'+
+	// 									'<div class="icon">'+
+	// 										'<input type="image" id="lampu1" src="loce1.png" alt="Submit button" onclick="lampuOn(this)" class="lampu" value="awal">'+
+	// 									'</div>'+
+										
+	// 								'</div>'+
+	// 							'</div>'+
+								
+	// 							'<div class="d-flex">'+
+	// 								'<div style="padding-right: 3px; padding-left: 5px"> <a href="#">'+' <h4>'+'Thermite'+'</h4>'+'</a>'+' </div>'+
+	// 								'<div>'+'<h4 class="komen">'+'komen'+' </h4> '+'</div>'+
+									
+	// 							'</div>'+
+	// 							'<table class="givecommend table">'+
+	// 									'<tr>'+
+	// 										'<td>'+'</td>'+
+	// 									'</tr>'+
+	// 								'</table>'+
+	// 							'<form style="display: none;" id="c1">'+
+	// 									'<input type="text" name="inputcommend" id="commend" class="form-control">'+'<br>'+
+	// 									'<input type="button" name="submitcomen" value="submit" class="btn btn-primary save">'+
+	// 							'</form>'+
+							
+	// 						'</div>'
+	// 			;
+	// 		    $('.addpost1').append(html);
+				
+	// 		$('.Postdelete').click(function() {
+	// 			if(confirm('Yakin mau dihapus?'))
+	// 				$(this).parents("table").remove();
+	// 			});
+	// 		});
+			
+	// 	});
+	$(document).ready(function(){
+			$('.post').click(function(){
+				var photo = $('#photo').val();
+				
+					
+				html=
+				'<table>'+
+				'<tr>'+
+					'<td>'+'<img src="4127.jpg" class="profile">'+'</td>'+
+					'<td align="right">'+'<input class="btn btn-primary Postdelete" type="button" name="hapus" value="Delete">'+'</td>'+
+				'</tr>'+
+				'<tr>'+ 
+					'<td colspan="2">'+'<img src="3.jpg"class="gmbrIn" style="width: 100%;height: auto;" ondblclick="lampuOn(lampu1)">'+
+					'</td>'+
+				'</tr>'+
+				'<tr>'+
+					'<td>'+'<input type="image" id="lampu1" src="loce1.png" onclick="lampuOn(lampu1)" class="lampu" value="awal">'+'</td>'+
+				'</tr>'+
+				'<tr>'+
+						'<td>'+'<table  class="givecommend" align="left">'+'</table>'+'</td>'+
+				'</tr class="komen" style="display: none">'+
+				'<tr>'+
+						'<td colspan="2">'+'<input type="text" name="inputcommend"  class="form-control commend">'+'</td>'+
+				'</tr>'+
+				'<tr>'+
+						'<td><input type="button" name="submitcomen" value="submit" class="btn btn-primary save">'+'</td>'+
+				'</tr>'+
+				'</table>';
+			    $('.addpost').append(html);
+				
+			$('.Postdelete').click(function() {
+				if(confirm('Yakin mau dihapus?'))
+					$(this).parents("table").remove();
+				});
+			});
+			
+		});
+	$(document).ready(function(){
+			$('.save').click(function(){
+				var from = "Thermite  ";
+				var commend = $('#commend').val();
+				
+					
+				html='<tr>'
+			    + '<td>'+from+'</td>'
+			    + '<td>'+':'+'</td>'
+			    + '<td>'+commend+'</td>'
+			    + '<td>'+'<input class="btn btn-default delete" type="button" name="hapus" value="Hapus">'+'</td>'
+			    + '</tr>';
+			    $('.givecommend').append(html);
+				
+			$('.delete').click(function() {
+				if(confirm('Yakin mau dihapus?'))
+					$(this).parents("tr").remove();
+				});
+			});
+			
+		});
+		
+	</script>
+<script type="text/javascript" >
+	var a = document.createElement('a');
+		function lampuOn(Lampu){
+			if(Lampu.value == "awal"){
+				Lampu.src = "img\\L\\loce2.png";
+				Lampu.value = "akhir";
+			}else{
+				Lampu.src = "img\\L\\loce1.png";
+				Lampu.value = "awal";
+			}
+		}
+		
+</script>
+</html>

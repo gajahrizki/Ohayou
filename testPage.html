@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>	TEST PAGE </title>
+</head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<link href="style.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="styleTubes.css">
+<body>
+	<center>
+		<div class="container" style="position: center">
+			<!-- ini dinding -->
+			<div class="set" style="background-color: #efeded; width: 700px;">
+				<!-- ini postingan -->
+				<div class="setPost" style="height: 750px">
+					<div>
+						<!-- ini photo -->
+						<div class="isiGmbr" align="center">
+							<img src="img\profileG\1.jpg" class="gmbrIn">
+						</div>
+						<!-- ini lope -->
+						<div class="d-flex align-items-center">
+							<div class="col-2">
+								<input type="image" id="lampu" src="img\L\loce1.png" alt="Submit button" onclick="lampuOn()" class="love">
+							</div>
+							<div>
+								<a href=#><input type="image" id="lampu" src="img\L\commend1.png" alt="Submit button" class="love"></a>
+							</div>
+						</div>
+						<!-- ini komentar -->
+						<div class="d-flex">
+							<div style="padding-right: 3px">Nama</div>
+							<div>komen</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="setPost" style="height: 750px">
+					<div>
+						<div class="isiGmbr" align="center">
+							<img src="img\profileG\1.jpg" class="gmbrIn">
+						</div>
+						<div class="d-flex align-items-center">
+							<div class="col">
+								<img src="img\L\love1.png" class="love">
+							</div>
+						</div>
+					</div>
+				</div>
+					
+				
+			</div>
+		</div>
+	</center>
+</body>
+<script type="text/javascript" >
+		function lampuOn(){
+			var Lampu = document.getElementById("lampu");
+			if(Lampu.src == "file:///D:/WEBPRO/Tubes/img/L/loce1.png"){
+				Lampu.src = "img\\L\\loce2.png";
+			}else{
+				Lampu.src = "img\\L\\loce1.png";
+			}
+
+		// 	function lampuOff(){
+		// 	var Lampu = document.getElementById("lampu");
+		// 	Lampu.src = "https://www.w3schools.com/js/pic_bulboff.gif";
+		} 
+</script>
+</html>

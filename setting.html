@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Setting</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"><link rel="stylesheet" type="text/css" href="styleTubes.css"><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script><link href="style.css" rel="stylesheet"><style type="text/css">
+
+	<style type="text/css">
+		
+		form{
+		align-content: center;
+		border-radius: 5px;
+		/*margin-left: 25%;
+		margin-right: 25%;*/
+		background-color: white;
+		padding-left: 15px;
+		padding-right: 15px;
+		padding-bottom: 75px;
+		
+	}
+
+	body{
+		background-image: url(img/rs.jpg);
+		background-size: 100%;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+	}
+
+	.hiden{
+		display : none;
+	}
+
+	#btnConfirm{
+		width: 25%;
+		float: right;
+		padding-right: 10px;
+		margin-right: 15px;
+	}
+
+	.profile{
+			border-radius: 100%;	
+			width: 180px;
+			height: 180px;
+		}
+	</style>
+</head>
+<body>
+
+	<div>
+		<div class="this_top_header">
+			<div class="d-flex align-items-center" style="height: 50;">
+				<div class="topPostLeft7" style="padding-left: 21%;">
+					<p class="Ohayou" style="padding-top:  10;"><a href="home.html">Ohayou</a></p>
+				</div>
+				<div style="padding-bottom: 10px">
+					<a href="profile.html"> <img src="img\profile\4127.jpg" alt="Submit button" class=" profile" style="height: 40px;width: 40px;"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div >
+		<div class="container" style="padding-top: 60px">
+			<div class="set" style="background-color: #efeded; border-radius: 15px">
+			<form>
+				<p style="font-size: 100px" align="center"><img src="img/1.png"><b>Setting</b></p>
+				<table class="table table-striped">
+
+					<tr id="glitch" style="visibility: hidden;"><td><form></form></td></tr>
+					<tr></tr>
+
+					<tr>
+						<td>Name</td>
+						<td>:</td>
+						<td>Thermite</td>
+						<td> </td>
+						<td><input type="button" name="cname" value="Change Name" class="btn btn-primary form-control" onclick="togglename()"></td>
+					</tr>
+					
+					<tr>
+						<td colspan="5" >
+						 <form class="hiden" id="c0">
+						 	<input type="text" name="newname" placeholder="Enter New Name" class="form-control"><br>
+							<input type="password" name="password" placeholder="Enter Password" class="form-control "><br>
+							<input type="button" name="change" value="Change" class="btn btn-primary form-control"><br>
+						 </form>
+						</td>
+					</tr>
+
+
+					<tr>
+						<td>Password</td>
+						<td>:</td>
+						<td>**********</td>
+						<td> </td>
+						<td><input type="button" name="cpassword" value="Change Password" class="btn btn-primary form-control" onclick="togglepass()" ></td>
+					</tr>
+
+					<tr>
+						<td colspan="5">
+						 <form class="hiden" id="c1">
+						 	<input type="password" name="Enter Old Password" placeholder="Enter Old Password" class="form-control"><br>
+							<input type="password" name="Enter New password" placeholder="Enter New Password" class="form-control"><br>
+							<input type="password" name="Enter Confirm New password" placeholder="Enter Confirm Password" class="form-control"><br>
+							<input type="button" name="signup" value="Change" class="btn btn-primary form-control"><br>
+						 </form>
+						</td>
+					</tr>
+
+					<tr>
+						<td>Email</td>
+						<td>:</td>
+						<td>Thermite@gmail.com</td>
+						<td> </td>
+						<td><input type="button" name="cemail" value="Change Email" class="btn-primary form-control" onclick="toggleemail()"></td>
+					</tr>
+
+					<tr>
+						<td colspan="5" >
+						 <form class="hiden" id=c2>
+						 	<input type="text" name="username" placeholder="Enter New Email" class="form-control"><br>
+							<input type="password" name="password" placeholder="Enter Password" class="form-control"><br>
+							<input type="button" name="signup" value="Change" class="btn btn-primary form-control"><br>
+						 </form>
+						</td>
+					</tr>
+
+					<tr>
+						<td>Phone Number</td>
+						<td>:</td>
+						<td>0873212***</td>
+						<td> </td>
+						<td><input type="button" name="cpn" value="Change Contact" class="btn-primary form-control" onclick="togglephone()"></td>
+					</tr>
+					<tr>
+						<td colspan="5">
+						 <form class="hiden" id=c3>
+						 	<input type="text" name="pn" placeholder="Enter New Phone Number" class="form-control"><br>
+							<input type="password" name="password" placeholder="Enter Password" class="form-control">
+							<br>
+							<input type="button" name="signup" value="Change" class="btn btn-primary form-control"><br>
+						 </form>
+						</td>
+					</tr>
+				</table>
+				
+			</form>
+		</div>
+	</div>
+</div>
+
+
+</body>
+</html>
+<script src="src/jquery-1.12.4.min.js"></script>
+<script>
+	function togglename() {
+        $("#c0").fadeToggle("slow");
+    }
+	function togglepass() {
+        $("#c1").fadeToggle("slow");
+    }
+
+    function toggleemail() {
+        $("#c2").fadeToggle("slow");
+    }
+
+    function togglephone() {
+        $("#c3").fadeToggle("slow");
+    }
+</script>

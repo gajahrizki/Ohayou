@@ -1,0 +1,74 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>SIGN</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<link href="style.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="styleTubes.css">
+
+
+</head>
+<body>
+	<div class=" containter">
+			
+			<div class="setS" ">
+				<div align="center" style="padding-top: 30px">
+					<img src="img\slideImg\untitled-2.png">
+				</div>
+					
+				<div class="setS" >
+							<div class="tes float-left col-sm-6"   >
+								<div style="padding-top: 10%;">
+									<img src="img\slideImg\signinPhone.png" style="width: auto; height: auto;">	
+								</div>
+							</div>
+							<div class=" float-right  col-sm-6 rounded" align="center" id="formInput" >
+								<div class="topRight containter " style="height: auto" >
+									<div class="topIn" >
+										<p class="font-weight-bold" style="font-size: 20pt; margin-top: 2%; margin-bottom: 6%">Selamat Datang,</p>
+											<div class="form-group col-sm-10">
+												<input id="fUsername" type="text" name="username" placeholder="Entry Username" class="form-control isi"><br>
+												<input id="fPassword" type="password" class="form-control isi" id="Upas" placeholder="Enter password" name="pwd">
+												
+												<div>
+						                            <button id="buttonIn" class="buttonIn">signin</button>
+						                         </div>
+						                     </div>
+											<footer>
+												make ur journal
+											</footer>
+										</div><br>
+										<div class="bottomRight container">
+											<footer class="bottomIn">
+												don't have an account? <a class="text-danger" href="signup.html"> singup</a>
+											</footer>
+										</div>
+									</div>
+							</div>
+					</div>	
+		</div>
+	</div>
+
+</body>
+<script src="src/jquery-1.12.4.min.js"></script>
+<script>
+	$(document).ready(function () {
+        $.getJSON("file.json",function (data) {
+            console.log(data);
+            $("#buttonIn").click(function(){
+            	var cUser = $("#fUsername").val();
+            	var cPass = $("#fPassword").val();
+        		if ((cUser == data.akun[1].id)&&(cPass == data.akun[1].password)) {
+					location.href="home.html"
+            	}
+    		});
+        })
+    });
+
+
+	</script>
+</html>

@@ -1,0 +1,25 @@
+{
+	"akun" : [
+		{
+			"id" : "akun0",
+			"password" : "akun0",
+			"email" : "andynata@gmail.com",
+			"name" : "Andyata Tamtama",
+			"number" : "0873212000"
+		},
+		{
+			"id" : "akun1",
+			"password" : "akun1",
+			"email" : "termite@gmail.com",
+			"name" : "Thermite",
+			"number" : "082214119000"
+		},
+		{
+			"id" : "akun3",
+			"password" : "akun3",
+			"email" : "ash@gmail.com",
+			"name" : "Ash",
+			"number" : "082217099000"
+		}
+	]
+}

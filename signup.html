@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>SIGN UP</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<style type="text/css">
+	body{
+		background-image: url(img/rs.jpg);
+		background-size: 100%;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+	}
+	form{
+		align-content: center;
+		border-radius: 5px;
+		margin-left: 25%;
+		margin-right: 25%;
+		background-color: white;
+		padding-left: 15px;
+		padding-right: 15px;
+		padding-bottom: 13px;
+		
+	}
+	.isi{
+			border-top:transparent;
+			border-right: transparent;
+			border-left: transparent;
+			background: transparent;
+			border-bottom: solid 2px;
+			border-bottom-color: :#D32F2F;
+	}
+	
+</style>
+</head>
+<body>
+<div>
+	<div class="container">
+		
+		<form align="center"  onsubmit="return validasi_input(this)">
+			<div class="logo">
+				<img style="padding-top: 10px" src="img/logo.png">
+			</div>
+			<h1 style="margin-top: 2%; color:black"><b>Sign Up</b></h1>
+			<input type="text" name="fullname" id ="fullname" placeholder="Entry Full Name" class="form-control isi"><br>
+			<input type="text"  name="email" placeholder="Entry Email" class="form-control isi"><br>
+			<input type="text" name="password" placeholder="Entry Password" class="form-control isi"><br>
+			<input type="text" name="phonenumber" placeholder="Entry Phone Number" class="form-control isi">
+			<br>
+			<input type="submit" name="signup" value="Sign Up" class="btn btn-primary form-control" ><br>
+
+			<footer>
+				<p align="center" style="color: black">By signing up, you agree to our Terms & Privacy Policy.</p>
+				<br>
+				<p align="center" style="color: black">Have an account?<a href="index.html"> Login</a></p>
+			</footer>
+		</form>
+		
+			
+	</div>
+</div>
+
+
+<script>
+	function validasi_input(form){
+  		if (form.fullname.value == "" ||
+  		  form.email.value == "" ||
+  		  form.username.value == "" ||
+  		  form.password.value == "" ||
+  		  form.password.value == ""){
+    		alert("Please Complate It");
+    		form.focus();
+    		return (false);
+  		}
+			alert("Account Successfully Created");
+			return (true);
+		}
+
+	
+
+</script>
+
+
+
+
+</body>
+</html>
